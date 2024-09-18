@@ -19,13 +19,13 @@ if int(edad)<10:
         print("no tiene edad para ser entrenador")
     else:
         print("no tiene edad para ser entrenadora")
-        quit()
+    quit()
         
 
 print("Comineza tu aventura")
 
 print("""lista de region
-         1. Kanto""")
+1. Kanto""")
 while True:
     region = str(input("Necesita un compañero de viaje. en que region se encuentra: ").capitalize())
         
@@ -46,15 +46,14 @@ while True:
     3. Planta   """)   
  
     tipo =str(input("Ingrese el tipo de pokermon para empezar: ").capitalize())
-    print(tipo)
 
-    if tipo == "Agua":
+    if tipo == "Agua" or "1":
         print("tu starter es 123")
         break
-    elif tipo == "Fuego":
+    elif tipo == "Fuego" or "2":
         print("tu starter es 456")
         break
-    elif tipo == "Planta":
+    elif tipo == "Planta" or "3":
         print("tu starter es 789")
         break
     else:
