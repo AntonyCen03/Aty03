@@ -11,14 +11,16 @@ while True:
         break   
     else:
         print("Debe ingresar niñas o niños")
-    
+
+  
 edad=int(input("Cuanto años tiene: "))
 if int(edad)<10:
     if genero == "niños":
         print("no tiene edad para ser entrenador")
     else:
-         print("no tiene edad para ser entrenadora")
-         quit()
+        print("no tiene edad para ser entrenadora")
+        quit()
+        
 
 print("Comineza tu aventura")
 
@@ -37,22 +39,25 @@ while True:
         print("Debe ingresar Kanto")
        
 
-
-print("""-------lista de pokemon------
- 1. Agua
- 2. Fuego
- 3. Planta   """)   
+while True:
+    print("""-------lista de pokemon------
+    1. Agua
+    2. Fuego
+    3. Planta   """)   
  
-tipo =input("Ingrese el tipo de pokermon para empezar: ")
+    tipo =str(input("Ingrese el tipo de pokermon para empezar: ").capitalize())
+    print(tipo)
 
-if tipo == "Agua" or "1":
-    print("tu starter es 123")
-elif tipo == "Fuego" or "2":
-    print("tu starter es 456")
-elif tipo == "Planta" or "3" :
-    print("tu starter es 789")
-else:
-    print("""no tengo ese tipo.
-             Seleciona de nuevo""")
+    if tipo == "Agua":
+        print("tu starter es 123")
+        break
+    elif tipo == "Fuego":
+        print("tu starter es 456")
+        break
+    elif tipo == "Planta":
+        print("tu starter es 789")
+        break
+    else:
+        print("no tengo ese tipo, Ingrese nuevamente.")
 
 input("Dale cualquier tecla para salirse!")
