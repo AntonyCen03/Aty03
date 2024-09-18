@@ -1,12 +1,14 @@
 print("Bienvenido al mundo pokermon")
 
-genero=(str(input("Eres niños o niñas: ")))
+while True:
+    genero=str(input("Eres niños o niñas: "))
 
-if genero == "niños":
-    print("Bienvenido")
-else:
-    if genero == "niñas":
+    if genero == "niños":
+        print("Bienvenido")
+        break
+    elif genero == "niñas":
         print("Bienvenida")
+        break   
     else:
         print("Debe ingresar niñas o niños")
     
@@ -22,12 +24,18 @@ print("Comineza tu aventura")
 
 print("""lista de region
          1. Kanto""")
-region = str(input("Necesita un compañero de viaje. en que region se encuentra: "))
+while True:
+    region = str(input("Necesita un compañero de viaje. en que region se encuentra: ").capitalize())
         
-if region == "Kanto" and genero == "niños":
-     print("tu compañero de viaje es Misty")
-else:
-     print("tu compañera de viaje es Brook")
+    if region == "Kanto" and genero == "niños":
+        print("tu compañero de viaje es Misty")
+        break
+    elif region == "Kanto" and genero == "niñas":
+        print("tu compañera de viaje es Brook")
+        break
+    else:
+        print("Debe ingresar Kanto")
+       
 
 
 print("""-------lista de pokemon------
